@@ -3472,14 +3472,22 @@ function library:create_settings_tab(menu)
     local settings_main = tab:section({text = 'main', side = 1})
     local settings_config = tab:section({text = 'config', side = 2})
     
-    local themedrop = settings_main:dropdown({text = 'Theme', flag = 'themes_selected', selected = self.themes.default, callback = function(selected)
-        library:set_theme(self.themes[selected])
-    end})
+    local themedrop = settings_main:dropdown({text = 'Theme', flag = 'themes_selected', selected = 'default'})
 	
     for i,v in pairs(self.themes) do
 	themedrop:add_value(i)
 	themedrop:update()
     end
+	
+    settings_config:button({text = 'load', confirm = true, callback = function()
+        xpcall(function()
+            library:set_theme(flags.themes_selected)
+            library:notification(("successfully loaded config '%s'"):format(flags.themes_selected), 5, color3_new(0.35, 1, 0.35))
+        end, function(err)
+            library:notification(err or ("unable to load config '%s'"):format(flags.themes_selected), 5, color3_new(1, 0.35, 0.35))
+        end)
+    end})
+	
 
     settings_main:keybind({text = 'open / close', flag = 'menubind', default = Enum.KeyCode.End, callback = function(bool)
         menu:set_open(bool, 0.1)
