@@ -188,7 +188,7 @@ local themes = {
             ['Option Background']         = Color3.fromRGB(35,35,35);
             ["Risky Text"]                = Color3.fromRGB(175, 21, 21);
             ["Risky Text Enabled"]        = Color3.fromRGB(255, 41, 41);
-    };
+    }
 }
 
 -- // variables
