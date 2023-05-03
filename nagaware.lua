@@ -160,9 +160,9 @@ local themes = {
         ['Section Background']  = Color3.fromRGB(32, 26, 66),
         ['Option Text 1']       = Color3.fromRGB(235,235,235),
         ['Option Text 2']       = Color3.fromRGB(155,155,155),
-        ['Option Border 1']     = Color3.fromRGB(45,45,50),
-        ['Option Border 2']     = Color3.fromRGB(0,0,0),
-        ['Option Background']   = Color3.fromRGB(31,31,34),
+        ['Option Border 1']     = Color3.fromRGB(30, 23, 67),
+        ['Option Border 2']     = Color3.fromRGB(56, 49, 89),
+        ['Option Background']   = Color3.fromRGB(28, 21, 65),
         ["Risky Text"]          = Color3.fromRGB(175, 21, 21),
         ["Risky Text Enabled"]  = Color3.fromRGB(255, 41, 41),
     };
