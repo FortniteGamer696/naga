@@ -142,6 +142,29 @@ local themes = {
         ['Option Background']   = Color3.fromRGB(31,31,34),
         ["Risky Text"]          = Color3.fromRGB(175, 21, 21),
         ["Risky Text Enabled"]  = Color3.fromRGB(255, 41, 41),
+    };
+['green'] = {
+        ['Accent']              = Color3.fromRGB(0, 168, 17),
+        ['Background']          = Color3.fromRGB(15,15,20),
+        ['Border']              = Color3.fromRGB(0,0,0),
+        ['Border 1']            = Color3.fromRGB(10,10,15),
+        ['Border 2']            = Color3.fromRGB(45,45,50),
+        ['Border 3']            = Color3.fromRGB(35,35,40),
+        ['Primary Text']        = Color3.fromRGB(240,240,240),
+        ['Secondary Text']      = Color3.fromRGB(145, 145, 145),
+        ['Group Background']    = Color3.fromRGB(0, 168, 17),
+        ['Selected Tab']        = Color3.fromRGB(20,20,25),
+        ['Unselected Tab']      = Color3.fromRGB(23,23,28),
+        ['Selected Tab Text']   = Color3.fromRGB(240,240,240),
+        ['Unselected Tab Text'] = Color3.fromRGB(145,145,145),
+        ['Section Background']  = Color3.fromRGB(18,18,23),
+        ['Option Text 1']       = Color3.fromRGB(235,235,235),
+        ['Option Text 2']       = Color3.fromRGB(155,155,155),
+        ['Option Border 1']     = Color3.fromRGB(45,45,50),
+        ['Option Border 2']     = Color3.fromRGB(0,0,0),
+        ['Option Background']   = Color3.fromRGB(31,31,34),
+        ["Risky Text"]          = Color3.fromRGB(175, 21, 21),
+        ["Risky Text Enabled"]  = Color3.fromRGB(255, 41, 41),
     }
 }
 
