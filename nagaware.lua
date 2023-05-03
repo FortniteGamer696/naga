@@ -3480,8 +3480,6 @@ function library:create_settings_tab(menu)
 	themedrop:add_value(i)
 	themedrop:update()
     end
-    wait(1)
-    themedrop:select('default')
 
     settings_main:keybind({text = 'open / close', flag = 'menubind', default = Enum.KeyCode.End, callback = function(bool)
         menu:set_open(bool, 0.1)
