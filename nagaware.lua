@@ -189,7 +189,7 @@ local themes = {
         ["Risky Text"]          = Color3.fromRGB(175, 21, 21),
         ["Risky Text Enabled"]  = Color3.fromRGB(255, 41, 41),
     };
-['NekoCheatFIX'] = {
+['NekoCheat'] = {
             ["Accent"]                    = Color3.fromRGB(226, 30, 112),
             ["Background"]                = Color3.fromRGB(18,18,18),
             ["Border"]                    = Color3.fromRGB(0,0,0),
