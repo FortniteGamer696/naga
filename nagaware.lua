@@ -3456,7 +3456,7 @@ function library:create_settings_tab(menu)
     for i,v in pairs(self.themes) do
 	themedrop:add_value(i)
     end
-	
+    wait(1)
     themedrop:select('default')
 
     settings_main:keybind({text = 'open / close', flag = 'menubind', default = Enum.KeyCode.End, callback = function(bool)
