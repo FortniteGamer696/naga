@@ -3449,9 +3449,15 @@ function library:create_settings_tab(menu)
     local settings_main = tab:section({text = 'main', side = 1})
     local settings_config = tab:section({text = 'config', side = 2})
     
-    settings_main:dropdown({text = 'Theme', flag = 'themes_selected', values = self.themes, selected = self.themes.default, callback = function(selected)
+    local themedrop = settings_main:dropdown({text = 'Theme', flag = 'themes_selected', selected = self.themes.default, callback = function(selected)
         library:set_theme(self.themes[selected])
     end})
+	
+    for i,v in pairs(self.themes) do
+	themedrop:add_value(i)
+    end
+	
+    themedrop:select('default')
 
     settings_main:keybind({text = 'open / close', flag = 'menubind', default = Enum.KeyCode.End, callback = function(bool)
         menu:set_open(bool, 0.1)
