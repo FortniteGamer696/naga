@@ -3479,7 +3479,7 @@ function library:create_settings_tab(menu)
 	themedrop:update()
     end
 	
-    settings_config:button({text = 'load', confirm = true, callback = function()
+    settings_main:button({text = 'load', confirm = true, callback = function()
         xpcall(function()
             library:set_theme(flags.themes_selected)
             library:notification(("successfully loaded config '%s'"):format(flags.themes_selected), 5, color3_new(0.35, 1, 0.35))
