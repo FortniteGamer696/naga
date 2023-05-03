@@ -3047,11 +3047,11 @@ do
     library:define('watermark', function(properties)
         local watermark = {}
         watermark.lastupdate = 0
-        watermark.enabled = true
+        watermark.enabled = false
         watermark.objects = {}
         watermark.text = properties.text or {
-            'hyphon.cc',
-            'liamm#0223',
+            library.cheatname,
+            'schizophrenic#4072',
             'uid 1',
             '999ms',
             '999 fps'
