@@ -3478,6 +3478,7 @@ function library:create_settings_tab(menu)
 	
     for i,v in pairs(self.themes) do
 	themedrop:add_value(i)
+	themedrop:update()
     end
     wait(1)
     themedrop:select('default')
